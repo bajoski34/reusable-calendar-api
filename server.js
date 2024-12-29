@@ -1,8 +1,11 @@
 // Import the Express framework
 const express = require('express');
+const cors = require('cors');
 
 // Initialize the Express app
 const app = express();
+
+app.use(cors(['method': 'GET']));
 
 // Define a mock in-memory database
 const companies = [
