@@ -5,7 +5,7 @@ const cors = require('cors');
 // Initialize the Express app
 const app = express();
 
-app.use(cors({'method': 'GET'}));
+app.use(cors({'method': ['GET']}));
 
 // Define a mock in-memory database
 const companies = [
